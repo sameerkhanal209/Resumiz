@@ -1,0 +1,58 @@
+.card{
+    -webkit-box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-grey-simple);
+    margin-bottom: 2rem;
+    border-radius: 5px;
+
+    .card-title{
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid var(--color-grey-simple);
+        font-weight: 700;
+        background: -webkit-linear-gradient(left,#fc466b,#3f5efb);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .card-body{
+        padding: 12px 15px;
+    }
+
+    .card-footer{
+        border-top: 1px solid var(--color-grey-simple);
+        padding: 12px 15px;
+    }
+}
+
+.card-primary{
+    border-top:2px solid var(--color-primary);
+    border-bottom:2px solid var(--color-primary);
+}
+
+.card-success{
+    border-top:2px solid var(--color-success);
+    border-bottom:2px solid var(--color-success);
+    .card-title{
+        background: -webkit-linear-gradient(left,#00c149,#009237); 
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
+
+.card-danger{
+    border-top:2px solid var(--color-danger);
+    border-bottom:2px solid var(--color-danger);
+}
+
+.card-full-primary{
+    border:1px solid var(--color-primary);
+}
+.card-full-success{
+    border:1px solid var(--color-success);
+}
+.card-full-danger{
+    border:1px solid var(--color-danger);
+}

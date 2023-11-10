@@ -1,0 +1,142 @@
+/* It holds side menu and main menu */
+.main-holder{
+    display: flex;
+    @media only screen and (max-width:1000px) {
+        flex-direction: column;
+    }
+
+    .main-menu{
+        max-width: 270px;
+        width: 100%;
+        display: block;
+        //border-right: 2px solid #f5f7f8;
+        border-right: 2px solid var(--color-navborder);
+
+        padding:30px 0;
+
+        @media only screen and (max-width:1000px) {
+            max-width: 100%;
+            border-right: none;
+        }
+
+        .button-area{
+            margin:0 1.8rem;
+
+            .menu-btn{
+                display: none;
+            }
+
+            @media only screen and (max-width:1000px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 380px;
+                width: 100%;
+                margin:0 auto;
+                padding:0 1rem;
+
+                .menu-btn{
+                    display: block;
+                }
+            }
+
+            @media only screen and (max-width:350px) {
+                display: block;
+                a,button{
+                    margin:10px !important;
+                }
+            }
+        }
+
+        .top-buttons{
+            max-width: 100%;
+            a,button{
+                margin:0 10px;
+                width: 100%;
+            }
+        }
+
+        .menu-area{
+            
+            @media only screen and (max-width:1000px) {
+                //display: none;
+
+                overflow: hidden;
+                transition: height 0.3s ease-out;
+
+                .navigation_menu{
+                    margin:20px 0;
+                    padding:20px 0;
+                    background-color: var(--color-navbg);
+                }
+
+                nav{
+                    
+                    a{
+                        max-width: 380px;
+                        margin: 0 auto;
+                    }
+                }
+
+                .active{
+                    background-color: var(--color-light-gray);
+                }
+                
+            }
+            &.hide{
+                height: 0;
+            }
+            &.show{
+                height: var(--openHeight);
+            }
+        }
+
+        nav{
+            padding: 30px 0;
+            .active{
+                //background-color: #edf2f4;
+                background-color: var(--color-navbg);
+            }
+            li,
+            ul{
+                list-style: none;
+                margin:0;
+                padding: 0;
+            }
+
+            ul{
+                li{
+                    margin: 0;
+                    padding: 0.7rem 0;
+
+                    a{
+                        padding:0 1.8rem;
+                        display: inline-block;
+                        color: var(--text-secondary);
+                        display: block;
+
+                        &:hover{
+                            text-decoration: none;
+                            @include link-gradient;
+                        }
+                    }
+                }
+                .active a{
+                    @include link-gradient;
+                }
+            }
+        }
+    }
+
+    .theme-switcher{
+        margin:20px 1.8rem !important;  
+        @media only screen and (max-width:1000px) {
+            margin:20px auto !important;  
+        }   
+    }
+
+    .main{
+        padding:20px;
+        width: 100%;
+    }
+}

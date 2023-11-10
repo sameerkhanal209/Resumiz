@@ -1,0 +1,57 @@
+.INACTIVE{
+    background:-webkit-gradient(linear,left top,right top,from(#e94057),to(#f27121));
+    background:linear-gradient(to right,#e94057,#f27121);
+    color:#fff;
+    padding:1px 5px;
+    border-radius:3px;
+    font-size:12px;
+    font-weight:700
+}
+.SUSPENDED{
+    background:-webkit-gradient(linear,left top,right top,from(#931a2b),to(#f12711));
+    background:linear-gradient(to right,#931a2b,#f12711);
+    color:#fff;
+    padding:1px 5px;
+    border-radius:3px;
+    font-size:12px;
+    font-weight:700
+}
+.CREATING{
+    background:-webkit-gradient(linear,left top,right top,from(#00c149),to(#009237));
+    background:linear-gradient(to right,#00c149,#009237);
+    color:#fff;
+    padding:1px 5px;
+    border-radius:3px;
+    font-size:12px;
+    font-weight:700
+}
+.REACTIVATING{
+    background:-webkit-gradient(linear,left top,right top,from(#00c149),to(#009237));
+    background:linear-gradient(to right,#00c149,#009237);
+    color:#fff;
+    padding:1px 5px;
+    border-radius:3px;
+    font-size:12px;
+    font-weight:700
+}
+.DEACTIVATING,
+.SUSPENDING{
+    background:-webkit-gradient(linear,left top,right top,from(#386ee8),to(#003ad1));
+    background:linear-gradient(to right,#003ad1,#003ad1);
+    color:#fff;
+    padding:1px 5px;
+    border-radius:3px;
+    font-size:12px;
+    font-weight:700
+}
+.ACTIVE{
+    background: #0072ff;
+    background: -webkit-linear-gradient(to right, #0072ff, #0097c2); 
+    background: linear-gradient(to right, #0072ff, #0097c2);
+
+    color:#fff;
+    padding:1px 5px;
+    border-radius:3px;
+    font-size:12px;
+    font-weight:700
+}

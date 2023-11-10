@@ -1,0 +1,100 @@
+.sense_place{
+    width: 100%;
+    text-align: center;
+    margin:20px 0;
+}
+
+@media (min-width: 350px){
+    .small_sense {
+      height: 90px;
+    }
+}
+ @media (min-width: 500px) {
+    .small_sense {
+        height: 90px;
+      }
+  }
+ @media (min-width: 800px) {
+    .small_sense {
+        height: 90px;
+      }
+  }
+
+.domain-price span{
+    display: inline-block;
+}
+        
+.domain-price span:first-child {
+    margin-left: 0;
+}
+.domain-price small{
+    color: #222;
+    font-size: 80%;
+}
+.domain-price span {
+    padding:0 9px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.domain-price span .lm a{
+    text-decoration: underline;
+}
+.spacer{
+    a{
+        margin:5px;
+    }
+}
+
+.profile{
+
+    @media only screen and (max-width:750px) {
+        .card-hold{
+            text-align: center;
+        }
+        .mw-500{
+            margin:0 auto;
+        }
+    }
+
+    @media only screen and (min-width:750px) {
+        .card-hold{
+            display: flex;
+            text-align: left;
+    
+            .details-holder{
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .error{
+        border:1px solid var(--color-danger);
+        border-left-width:5px;
+        padding: 5px 5px 5px 10px;
+        border-radius: 5px;
+    }
+
+}
+
+.create-new{
+    .error-title{
+        h3{
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            font-weight: 400;
+            letter-spacing: -.05rem;
+
+            span{
+                font-weight: 700;
+                color: var(--text-secondary);
+            }
+        }
+        p{
+            margin:0;
+            padding:0;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
+}

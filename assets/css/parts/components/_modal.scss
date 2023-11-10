@@ -1,0 +1,109 @@
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+
+    transition: .4s opacity ease-in-out;
+
+    .card{
+        margin-bottom: 0;
+    }
+
+    .card-title{
+        position: relative;
+    }
+
+    .btn-modal-close{
+        color: inherit;
+        position: absolute;
+        top: 0;
+        right: 5px;
+        bottom: 0;
+        z-index: 2;
+        padding: 1.25rem 1rem;
+
+        box-sizing: content-box;
+        background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+        border: 0;
+        opacity: .5;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    .modal-content {
+        position: relative;
+        margin: auto;
+        
+        max-width: 600px;
+    }
+
+  }
+
+  .disabled-overlay{
+    position: relative;
+  }
+  .overlay-content{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5rem;
+    p{
+      background-color: var(--color-danger);
+      color: #fff;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+
+
+  .slidein{
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  .slideout{
+    -webkit-animation-name: animatedown;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatedown;
+    animation-duration: 0.4s
+  }
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  @-webkit-keyframes animatedown {
+    from {top:0px; opacity:1} 
+    to {top:-300px; opacity:0}
+  }
+  
+  @keyframes animatedown {
+    from {top:0px; opacity:1}
+    to {top:-300px; opacity:0}
+  }

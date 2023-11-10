@@ -1,0 +1,6 @@
+@mixin link-gradient {
+    background: -webkit-linear-gradient(left,#4568dc,#8e2de2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

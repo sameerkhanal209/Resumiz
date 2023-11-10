@@ -1,0 +1,129 @@
+.auth-body{
+    background-color: var(--color-cream);
+
+    header{
+        margin-top: 20px;
+    }
+
+    .head-heading{
+        h2{
+            margin:15px 0 25px 0;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+
+    .container-bx{
+        max-width: 900px;
+        margin:0 auto;
+    }
+
+    main{
+        padding: 0 10px;
+
+        .auth_box{
+            @media only screen and (min-width:750px) {
+                display: flex;
+            }
+        }
+
+        .box {
+            max-width: 900px;
+            padding: 0;
+            margin: 0 auto;
+            border-radius: 3px;
+            box-shadow: 0 4px 9px -3px rgb(102 136 153 / 15%);
+            background-color: var(--color-bg);
+            margin-top: 20px;
+        }
+
+        .right,
+        .left{
+            padding: 25px;
+            width: 100%;
+        }
+
+        
+        .right{
+            background-color: var(--color-light);
+            border-left: 1px solid var(--color-navborder);
+            @media only screen and (min-width:750px) {
+                max-width: 370px;
+            }
+            
+        }
+
+        h3{
+            font-weight: 400;
+        }
+
+        .features{
+            list-style-image: url(check.svg);
+            padding-left: 25px;
+            line-height: 2.5;
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+
+        .detail-box{
+            
+
+            @media only screen and (min-width:750px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                padding: 10px 40px;
+            }
+
+            padding: 10px 20px;
+
+            h2{
+                margin-bottom: 0;
+            }
+
+            p{
+                margin-top: .6rem;
+                font-size: 13px;
+                line-height: 1.4;
+                color: #767676;
+            }
+
+            .right-side{
+                
+                width: 100%;
+
+                @media only screen and (min-width:750px) {
+                    max-width: 150px;
+                    width: 100%;
+                }
+
+                a{
+                    width: 100%;
+                    
+                }
+            }
+        }
+    }
+
+    .flexed-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding:20px !important;
+
+        h2{
+            margin:0;
+            padding:0;
+        }
+    }
+
+    footer{
+        p{
+            margin-top: 25px;
+            font-size: 1.1em;
+            text-align: center;
+        }
+    }
+}

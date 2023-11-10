@@ -1,0 +1,15 @@
+.tab{
+    display: flex;
+    flex-wrap: wrap;
+
+    button{
+        margin: 10px;
+    }
+}
+.tabcontent{
+    display: none;
+}
+.tab .active {
+    border: 1px solid #2196f3;
+    border-bottom: 3px solid #2196f3;
+}
